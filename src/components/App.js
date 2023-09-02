@@ -1,8 +1,8 @@
-import { FeedbackOptions } from "./FeedbackOptions";
-import { Section } from "./Section";
-import { Statistics } from "./Statistics";
+import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
+import { Section } from "./Section/Section";
+import { Statistics } from "./Statistics/Statistics";
 import { Component } from "react";
-import { Notification } from "./Notification";
+import { Notification } from "./Notification/Notification";
 
 export class App extends Component {
   state = {
@@ -14,7 +14,7 @@ export class App extends Component {
   onLeaveFeedback = propName => {
     this.setState(prevState => {
       return {
-        [propName.target.textContent.toLowerCase()]: prevState[propName.target.textContent.toLowerCase()] + 1,
+        [propName.target.textContent]: prevState[propName.target.textContent] + 1,
       };
     });
   }
