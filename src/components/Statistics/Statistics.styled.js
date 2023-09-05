@@ -9,4 +9,5 @@ export const StatisticsTitle = styled.p`
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: start;`
+    text-align: start;
+`
